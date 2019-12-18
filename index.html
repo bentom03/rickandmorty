@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters of Rick and Morty Show</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="base.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>Characters of Rick and Morty Show</h3>
+    </header>
+    <nav>
+        <h4>Filters</h4>
+        <div id="species">
+            <h4>Species</h4>
+        </div>
+        <div id="gender"><h4>Gender</h4></div>
+        
+    </nav>
+    <main>
+        <div class="filters">
+            <h4>Selected Filters</h4>
+            <div class="tags">
+            </div>
+        </div>
+
+        <section class="search-sort">
+            <div class="search-container">
+                <h4>Search by Name</h4>
+                <input type="text" value="" />
+                <button type ="submit" class="search">Search</button>
+            </div>
+            <div class="sort-container">
+                <h4>Sort by ID</h4>
+                <select name="" id="sort">
+                    <option value=""></option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+            </div>
+        </section>
+        <section id="characters">
+            
+        </section>
+
+    </main>
+
+    <!-- Script source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="base.js"></script>
+</body>
+</html>

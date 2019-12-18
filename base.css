@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-size: .75rem;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+header {
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+nav {
+    left: 0;
+    top: 5rem;
+    padding: 2rem;
+    float: left;
+}
+nav div {
+    border: 1px solid #000;
+    width: 10rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.tags {
+    display: flex;
+}
+.tag {
+    background: #333;
+    color: #fff;
+    font-size: .85rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: .5rem;
+}
+.close {
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container {
+    width: 50%;
+}
+.sort-container {
+    width: 25%;
+}
+input {
+    padding: .2rem;
+    width: 70%;
+}
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: .3rem 1rem;
+}
+select {
+    width: 100%;
+    padding: .2rem;
+}
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.character-wrapper {
+    width: 22%;
+    background: #000;
+    margin-top: 3rem;
+    padding: .3rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+.image-container {
+    margin: auto;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+}
+.profile-info {
+    background: #333;
+    padding: .3rem .5rem;
+    box-sizing: border-box;
+}
+.profile-info p {
+    display: inline-block;
+    margin-right: .5rem;
+    opacity: 0.7;
+}
+
+.character-info div {
+    display: flex;
+    justify-content: space-between;
+    opacity: .8;
+}
+.character-info div p:nth-child(2) {
+    color: #ffa500;
+    text-align: right;
+}
+.search-sort {
+    padding-right: 3rem;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+    header {
+        padding: .5rem 2rem;
+    }
+    nav div {
+        width: 8rem;
+    }
+    .character-wrapper {
+        width: 20%;
+        padding: .3rem;
+        color: #fff;
+        margin-right: .5rem;
+    }
+    .character-info div {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .character-info div p:nth-child(2) {
+        text-align: left;
+        margin-top: -.5rem;
+    }
+    input {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-left: .5rem;
+    }
+    header, nav {
+        width: 100%;
+        padding: .5rem 1rem;
+        float: none;
+        display: block;
+    }
+    nav div {
+        width: 20rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    .filters, .search-sort, .search-container, .sort-container {
+        width: 100%;
+        display: block;
+    }
+    #characters {
+        justify-content: center;
+    }
+    .character-wrapper {
+        width: 40%;
+    }
+}
+
